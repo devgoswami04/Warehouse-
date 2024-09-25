@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Product Management</h1>
+
+    <div class="container">
+        <h2>Add Product</h2>
+        <form id="addProductForm">
+            <label for="city">City:</label>
+            <input type="text" id="city" required>
+            <label for="category">Category:</label>
+            <input type="text" id="category" required>
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" required>
+            <label for="price">Price:</label>
+            <input type="number" id="price" step="0.01" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required>
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" step="0.01" required>
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Search Products</h2>
+        <label for="searchTerm">Search Term:</label>
+        <input type="text" id="searchTerm" required>
+
+        <button onclick="searchProducts()">Search Products</button>
+    </div>
+
+    <button onclick="window.location.href='products.html'">View Products</button>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
